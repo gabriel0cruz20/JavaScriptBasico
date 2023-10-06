@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atribuindo valor em uma tag HTML por id</title>
+</head>
+<body>
+    <p  id="txt01"> Texto no paragrafo</p>
+    <script>
+        document.write("<h1> Sistemas em JavaScript</h1>")
+        document.getElementById("txt01").textContent = 'atribuindo o texto ao paragrafo com getElementById';
+        document.getElementById("txt01").style.color = "blue"
+        document.getElementById("txt01").innerHTML = '<strong>atribuindo o texto ao paragrafo com getElementById</strong>';
+    </script>
+</body>
+</html>
