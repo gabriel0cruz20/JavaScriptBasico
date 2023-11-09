@@ -11,18 +11,26 @@
 
 <body>
     <h1>Calculadora Simples</h1>
+    
     <script>
         //declrar variaveis
-        let oprerando1;
+        let operando1;
         let oprerando2;
 
         //solicitar o primeiro operando
-        oprerando1 = prompt("digite o primeiro numero:");
+        operando1 = parseFloat( prompt("digite o primeiro numero:") );
 
         //solicitar o segundo operando
-        oprerando2 = prompt("digite o segundo numero:");
+        operando2 = parseFloat( prompt("digite o segundo numero:") );
 
-       document.write(`adição: ${operando1} + ${oprerando2} = ${operando1 + oprerando2}`);
+        document.write(`adição: ${operando1} + ${operando2} = ${operando1 + operando2} <br>`);
+        document.write(`subtração: ${operando1} - ${operando2} = ${operando1 - operando2}<br>`);
+        document.write(`Multiplicação: ${operando1} * ${operando2} = ${operando1 * operando2}<br>`);
+        document.write(`Divisão: ${operando1} / ${operando2} = ${operando1 / operando2}`);
+        document.write(`Resto da Divisão: ${operando1} % ${operando2} = ${operando1 % operando2}<br>`);
+        document.write(`Exponenciação: ${operando1} elevado a ${operando2} = ${operando1 ** operando2}<br>`);
+        document.write(`Unario de incremento: ${operando1} apos incrementar  = ${++operando1}<br>`);
+        document.write(`Unario de cremento: ${operando1} apos decrementar = ${--operando1}<br>`);
 
     </script>
 </body>
